@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio practica Miguel Machado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navegacion -->
+        <nav class="navbar" style="background-color: #8e56ac;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white">Mi Portafolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Acerca de mi">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#Proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#pasatiempos">Pasatiempos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contacto">Contactame</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Acerca de mi -->
+    <section id="Acerca de mi" class="py-3">
+        <h2 class="display-4 text-center py-3">Acerca de mí</h2>
+        <div class="container">
+            <div class=" row">
+                <div class="col-12 col-md-6">
+                    <p>Hola! Soy Miguel Machado, estudiante de
+                        ingenieria de sistemas en cuarto semestre.
+                        He vivido toda mi vida en Colombia, estudie en el
+                        colegio Montessori de Medellin, y aunque no he tenido
+                        experiencias laborales en el ambito de sistemas, este ultimo
+                        año y medio he aprendido:
+                    </p>
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Programacion orientada a objetos</li>
+                        <li>Estructuras de datos</li>
+                        <li>Matematica y logica discreta</li>
+                    </ul>
+                    <p>En este semestre voy a concentrarme en hacer proyectos y mejorar mis habilidades,
+                        a la par que aprender:
+                    </p>
+                    <ul>
+                        <li>Ingenieria web</li>
+                        <li>Circuitos electronicos</li>
+                        <li>Mas lenguajes</li>
+                    </ul>
+                    <p><strong>Gracias por visitar mi pagina! Aqui encontraras informacion sobre mis
+                            proyectos, hobbies y demas cosas.
+                        </strong></p>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="carouselExample" class="carousel slide" style="max-width: 100%">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="resources/WhatsApp Image 2025-02-07 at 4.16.46 PM.jpeg" class="img-fluid d-block w-100"
+                                    alt="..." style="height: 500px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/WhatsApp Image 2025-02-07 at 4.14.57 PM.jpeg" class="img-fluid d-block w-100"
+                                    alt="..." style="height: 500px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="resources/WhatsApp Image 2025-02-07 at 4.17.20 PM.jpeg" class="img-fluid d-block w-100"
+                                    alt="..." style="height: 500px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- proyectos -->
+    <section id="Proyectos" class="py-3">
+        <div>
+            <h2 class="display-4 text-center py-3">Proyectos que he hecho</h2>
+            <div class="text-center">
+                <a href="pages/proyectos.html" class="btn btn-success btn-lg">Ver mis proyectos</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- pasatiempos -->
+    <section id="pasatiempos" class="py-3">
+        <h2 class="display-4 text-center py-3">Pasatiempos</h2>
+        <div class="container text-center">
+            <p>Los pasatiempos son formas de aliviar la presion del dia a dia y tener
+                algo que nos guste hacer en nuestro tiempo libre, y mejora nuestra salud mental.
+                Estas son algunas de las cosas que hago en mi tiempo libre:
+            </p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="resources/salacine.jpg" class="card-img-top" alt="" id="cine">
+                        <div class="card-body">
+                            <h3 class="card-title">Ver peliculas</h3>
+                            <p class="card-text">Ver peliculas me ayuda a salir del mundo real
+                                un rato y disfrutar de una historia, por eso mis favoritas son de
+                                fantasia y ciencia ficcion.
+                            </p>
+                            <button onclick="pelicula()" class="btn btn-danger justify-content-md-center">Cual es mi pelicula
+                                favorita?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="resources/pages-3554116_960_720.jpg" class="card-img-top" alt="" id="libro">
+                        <div class="card-body">
+                            <h3 class="card-title">Leer</h3>
+                            <p class="card-text">Leer antes de dormir puede ayudar a despejar la
+                                mente de la tecnologia que usamos los de sistemas, y tiene la misma cualidad
+                                de las peliculas de poder entrar en un mundo de imaginacion.
+                            </p>
+                            <button onclick="libro()" class="btn btn-success justify-content-md-center">Cual es mi libro
+                                favorito?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="resources/LEGO_logo.svg.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Armar Lego</h3>
+                            <p class="card-text">Este hobby es uno que no puedo hacer todos los
+                                dias, pues son bastante caros. Aun asi, tengo muchos de cuando era
+                                pequeño, y los armo y limpio cuando se necesita.
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow-sm h-100">
+                        <img src="resources/WhatsApp Image 2025-02-10 at 7.45.59 PM.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Salir con mis amigos</h3>
+                            <p class="card-text">Salir con unos buenos amigos es excelente para
+                                ponerse feliz de una, puede ser a cine, a comer o a la casa de alguno,
+                                pero es seguro que con ellos se disfruta y se relaja.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" style="background-color: #838284; padding: 20px 0; color: white;">
+        <div class="container">
+            <h3>¡Contáctame!</h3>
+            <p>Correo: miguel.machado@eia.edu.co</p>
+            <p>Instagram: miguel_machado_v</p>
+            <p>Github: Miguel-Machado85</p>
+
+            <form action="" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary">Enviar mensaje</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
